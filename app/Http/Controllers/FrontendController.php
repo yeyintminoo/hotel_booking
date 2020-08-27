@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 namespace App\Http\Controllers;
 
@@ -9,14 +9,15 @@ use App\Reservation;
 class FrontendController extends Controller
 {
      public function home(){
-        // $rooms = Room::all();
-        $rooms = Room::orderBy('id','desc')->take(6)->get();
-    	return view('frontend.home',compact('room'));
+        $rooms = Room::all();
+        // $rooms = Room::orderBy()->take()->get();
+    	return view('frontend.home',compact('rooms'));
     }
 
     public function room(){
-        $reservations = reservation::take(3)->get();
-    	return view('frontend.room',compact('#'));
+        $reservations = Reservation::all();
+        // $reservations = reservation::take()->get();
+    	return view('frontend.room',compact('reservations'));
     }
     
     public function frontendgallery(){

@@ -193,7 +193,7 @@
     </div>
     
     {{-- Room --}}
-    <div class="container container-fluid">
+    {{-- <div class="container container-fluid">
       <div class="row">
         <div class="col-md-3 col-sm-6 my-4">
           <div class="card">
@@ -214,10 +214,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
-    <!--detail modal-->
-    <div class="modal fade" id="detailModal">
+    
+    {{-- <div class="modal fade" id="detailModal">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -246,8 +246,6 @@
                     <input type="number" name="" id="qty" class="form-control w-50">
                   </div>
                   <a href="{{route('frontendcheckout')}}" class="btn btn-outline-dark btn-block">Book Now</a>
-                  {{-- <button class="btn btn-outline-dark">Book Now</button> --}}
-                  <!-- <button class="btn btn-outline-dark">Add to Cart</button> -->
                 </div>
               </div>
             </div>
@@ -257,26 +255,26 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
-       {{--  @foreach($items as $item)
+        @foreach($rooms as $room)
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="{{asset($item->photo)}}" alt=""></a>
+            <a href="#"><img class="card-img-top" src="{{asset($room->photo)}}" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">{{$item->name}}</a>
+                <a href="#">{{$room->name}}</a>
               </h4>
-              <h5>{{$item->price}}</h5>
-              <p class="card-text">{{$item->description}}</p>
+              <h5>{{$room->rate}}</h5>
+              <p class="card-text">{{$room->description}}</p>
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-info btn-sm addtocart" data-id="{{$item->id}}" data-name="{{$item->name}}" data-photo="{{asset($item->photo)}}" data-price="{{$item->price}}" data-discount="{{$item->discount}}" data-qty="{{$item->qty}}">Add to Cart</a>
-              <a href="{{route('frontenddetail',$item->id)}}" class="btn btn-primary btn-sm">Detail</a>
+              <a href="" class="btn btn-info btn-sm buynow" data-id="{{$item->id}}" data-name="{{$room->name}}" data-photo="{{asset($room->photo)}}" data-rate="{{$room->rate}}">Buy Now</a>
+              <a href="{{route('frontenddetail',$room->id)}}" class="btn btn-primary btn-sm">Detail</a>
             </div>
           </div>
         </div>
-        @endforeach --}}
+        @endforeach
 
 @endsection
 

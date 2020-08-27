@@ -51,8 +51,8 @@ $(document).ready(function(){
 
 
 	// Add To Cart
-	$(".addtocart").on('click',function(){
-		var item_qty=parseInt($('#qty').val());
+	$(".booknow").on('click',function(){
+		
 		var id = $(this).data('id');
 		var name = $(this).data('name');
 		var photo = $(this).data('photo');
