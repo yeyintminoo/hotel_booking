@@ -135,12 +135,12 @@
     <div class="container">
     	<div class="row">
     		<div class="col-md-4 px-5">
-    			<h5>Our Delivery</h5>
-    			<p class="text-justify text-muted">You can order from home.We will knock you soon.</p>
+    			<h5>Our Description</h5>
+    			<p class="text-justify text-muted">The Royal's Hotel is a modern, elegant 4-star hotel overlooking the sea, perfect for a romantic, charming vacation.</p>
     		</div>
     		<div class="col-md-4 px-5">
-    			<h5>Our Services</h5>
-    			<p class="text-justify text-muted">Quick Delivery,Fresh Ones,Right Time Information,Trust Contact</p>
+    			<h5>Our Service</h5>
+    			<p class="text-justify text-muted">The Royal's Hotel is one of the most important components of the wider service industry, catering for customers who require overnight accommodation.</p>
     		</div>
     		<div class="col-md-4 px-5 social">
     			
