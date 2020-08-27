@@ -1,7 +1,7 @@
 @extends('frontendtemplate')
 @section('content')
 
-        <h1 class="text-center py-3">JOURNEY</h1>
+        <h1 class="text-center py-3">ROYAL's JOURNEY</h1>
         <p class="text-center">WHERE WE BEGINS AND MOVES ON</p>
         <!--================ About History Area  =================-->
         <section class="about_history_area section_gap">
