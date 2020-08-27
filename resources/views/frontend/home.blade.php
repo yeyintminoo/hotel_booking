@@ -2,9 +2,9 @@
 @section('content')
 
     <h1 class="text-center text-uppercase">Royal's Accomodation</h1>
-    <div class="container-fluid">
+    <div class=" container container-fluid">
        <div class="hotel_booking_area position">
-           <div class="container">
+           
                <div class="hotel_booking_table">
                    <div class="col-md-3">
                        <h2 class="text-dark">Book<br> Your Room</h2>
@@ -89,6 +89,7 @@
                                                <option value="1">01</option>
                                                <option value="2">02</option>
                                                <option value="3">03</option>
+                                               <option value="3">None</option>
                                            </select>
                                        </div>
                                        <a class="book_now_btn button_hover" href="#">Book Now</a>
@@ -98,7 +99,7 @@
                        </div>
                    </div>
                </div>
-           </div>
+           
        </div>
     </div>
 
